@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Dash Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand">GD Portfolio</div>
+        <ul class="nav-links">
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Modes ▾</button>
+                    <div class="dropdown-content">
+                        <a href="#cube">Cube</a>
+                        <a href="#ship">Ship</a>
+                        <a href="#ball">Ball</a>
+                        <a href="#ufo">UFO</a>
+                        <a href="#wave">Wave</a>
+                        <a href="#spider">Spider</a>
+                        <a href="#swingcopter">Swingcopter</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#hardest-levels">Hardest Levels</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header / Introduction -->
+    <header class="hero">
+        <h1>My Geometry Dash Journey</h1>
+        <p>Welcome to my portfolio! Here you'll find a short explanation of each game mode, my personal preferences, skill levels, and the hardest levels I've managed to beat. Ready to jump in?</p>
+    </header>
+
+    <main>
+        <!-- Modes Section -->
+        <section id="modes" class="modes-section">
+            <h2>Game Modes</h2>
+
+            <!-- Cube -->
+            <div class="mode-container" id="cube">
+                <div class="mode-header" onclick="toggleMode('cube')">
+                    <h3>Cube (Icon)</h3>
+                    <span class="icon">▼</span>
+                </div>
+                <div class="mode-content">
+                    <p class="explanation">The default mode. Tap to jump from block to block.</p>
+                    <div class="stats">
+                        <div class="stat-row">
+                            <span>Preference</span>
+                            <div class="circles" data-rating="4"></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Skill</span>
+                            <div class="circles" data-rating="4"></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Enjoyment</span>
+                            <div class="circles" data-rating="5"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ship -->
+            <div class="mode-container" id="ship">
+                <div class="mode-header" onclick="toggleMode('ship')">
+                    <h3>Ship</h3>
+                    <span class="icon">▼</span>
+                </div>
+                <div class="mode-content">
+                    <p class="explanation">Hold to fly up, release to fall down. Requires precise control.</p>
+                    <div class="stats">
+                        <div class="stat-row">
+                            <span>Preference</span>
+                            <div class="circles" data-rating="5"></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Skill</span>
+                            <div class="circles" data-rating="4"></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Enjoyment</span>
+                            <div class="circles" data-rating="4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ball -->
+            <div class="mode-container" id="ball">
+                <div class="mode-header" onclick="toggleMode('ball')">
+                    <h3>Ball</h3>
+                    <span class="icon">▼</span>
+                </div>
+                <div class="mode-content">
+                    <p class="explanation">Tap to switch gravity while rolling on the ground.</p>
+                    <div class="stats">
+                        <div class="stat-row">
+                            <span>Preference</span>
+                            <div class="circles" data-rating="4"></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Skill</span>
+                            <div class="circles" data-rating="4"></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Enjoyment</span>
+                            <div class="circles" data-rating="4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UFO -->
+            <div class="mode-container" id="ufo">
+                <div class="mode-header" onclick="toggleMode('ufo')">
+                    <h3>UFO</h3>
+                    <span class="icon">▼</span>
+                </div>
+                <div class="mode-content">
+                    <p class="explanation">Tap to jump in mid-air, similar to Flappy Bird.</p>
+                    <div class="stats">
+                        <div class="stat-row">
+                            <span>Preference</span>
+                            <div class="circles" data-rating="3"></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Skill</span>
+                            <div class="circles" data-rating="4"></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Enjoyment</span>
+                            <div class="circles" data-rating="4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wave -->
+            <div class="mode-container" id="wave">
+                <div class="mode-header" onclick="toggleMode('wave')">
+                    <h3>Wave</h3>
+                    <span class="icon">▼</span>
+                </div>
+                <div class="mode-content">
+                    <p class="explanation">Hold to fly diagonally up, release to fly diagonally down in a zigzag pattern.</p>
+                    <div class="stats">
+                        <div class="stat-row">
+                            <span>Preference</span>
+                            <div class="circles" data-rating="4"></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Skill</span>
+                            <div class="circles" data-rating="3"></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Enjoyment</span>
+                            <div class="circles" data-rating="3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spider -->
+            <div class="mode-container" id="spider">
+                <div class="mode-header" onclick="toggleMode('spider')">
+                    <h3>Spider</h3>
+                    <span class="icon">▼</span>
+                </div>
+                <div class="mode-content">
+                    <p class="explanation">Control switch position from bottom to top instantly.</p>
+                    <div class="stats">
+                        <div class="stat-row">
+                            <span>Preference</span>
+                            <div class="circles" data-rating="4"></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Skill</span>
+                            <div class="circles" data-rating="3"></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Enjoyment</span>
+                            <div class="circles" data-rating="4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Swingcopter -->
+            <div class="mode-container" id="swingcopter">
+                <div class="mode-header" onclick="toggleMode('swingcopter')">
+                    <h3>Swingcopter</h3>
+                    <span class="icon">▼</span>
+                </div>
+                <div class="mode-content">
+                    <p class="explanation">Control switch gravity on the air while moving forward.</p>
+                    <div class="stats">
+                        <div class="stat-row">
+                            <span>Preference</span>
+                            <div class="circles" data-rating="3"></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Skill</span>
+                            <div class="circles" data-rating="3"></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Enjoyment</span>
+                            <div class="circles" data-rating="3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hardest Levels Section -->
+        <section id="hardest-levels" class="hardest-section">
+            <h2>Hardest Levels Beaten</h2>
+            <div class="level-grid">
+                
+                <!-- Level 1 -->
+                <div class="level-card">
+                    <!-- Replace the src with your own image -->
+                    <img src="https://i.redd.it/4j5al9c8voa51.png" alt="Level Image" class="level-img">
+                    <div class="level-info">
+                        <h3>Bloodbath</h3>
+                        <p><strong>Difficulty:</strong> Extreme Demon</p>
+                        <p><strong>Total Attempts:</strong> 79,243</p>
+                        <p><strong>Enjoyment:</strong> 7/10</p>
+                    </div>
+                </div>
+
+                <!-- Level 2 -->
+                <div class="level-card">
+                    <!-- Replace the src with your own image -->
+                    <img src="https://i.ytimg.com/vi/kI7WTN1FIxQ/maxresdefault.jpg" alt="Level Image" class="level-img">
+                    <div class="level-info">
+                        <h3>Boobawamba</h3>
+                        <p><strong>Difficulty:</strong> Extreme Demon</p>
+                        <p><strong>Total Attempts:</strong> 113,483</p>
+                        <p><strong>Enjoyment:</strong> 9/10</p>
+                    </div>
+                </div>
+
+                <!-- Level 3 -->
+                <div class="level-card">
+                    <!-- Replace the src with your own image -->
+                    <img src="https://i.ytimg.com/vi/LvpzqanyEk8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDCGVx-cNX5OP8wxKcBDDOK0jVzmg" alt="Level Image" class="level-img">
+                    <div class="level-info">
+                        <h3>Amethyst</h3>
+                        <p><strong>Difficulty:</strong> Extreme Demon</p>
+                        <p><strong>Total Attempts:</strong> 115,992</p>
+                        <p><strong>Enjoyment:</strong> 8/10</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Geometry Dash Portfolio © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
