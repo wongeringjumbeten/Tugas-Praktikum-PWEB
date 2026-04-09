@@ -1,7 +1,3 @@
-# 🎮 Geometry Dash Portfolio
-
-## 📌 Deskripsi Proyek
-
 **Geometry Dash Portfolio** adalah sebuah website sederhana berbasis **HTML, CSS, dan JavaScript** yang menampilkan perjalanan dan pengalaman bermain game *Geometry Dash*. Website ini berisi informasi tentang berbagai **game modes**, tingkat preferensi, skill, enjoyment, serta daftar **level tersulit** yang pernah diselesaikan.
 
 Proyek ini dibuat sebagai tugas pengembangan web dengan fokus pada:
